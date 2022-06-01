@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> - Fit Guy - </title>
+    <link rel="stylesheet" href="./css/style.css">             <!-- Main CSS -->
+    <link rel="stylesheet" href="./css/nav.css">               <!-- Nav Css -->
+    <link rel="stylesheet" href="./css/home.css">              <!-- Home CSS -->
+    <link rel="stylesheet" href="./css/about.css">             <!-- About Css -->
+    <link rel="stylesheet" href="./css/activity.css">          <!-- Activity Css -->
+    <link rel="stylesheet" href="./css/contact.css">           <!-- Contact Css -->
+    <link rel="stylesheet" href="./css/media.css">             <!-- Media Css -->
+    <link rel="stylesheet" href="./css/login.css">             <!-- LogIn Css -->
+    <link rel="stylesheet" href="./css/phone.css">             <!-- Phone Css -->
+    <link rel="stylesheet" href="./css/flex.css">              <!-- Flex Css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- Fontawsome Css -->
+    <!--  -->
+</head>
+<body class="flex ac jc">
+    <div class="loader" style="width:100vw;height:100vh;display:flex;align-items:center;justify-content:center;background:#fe7100;"><img style="width:350px" src="./src/loader.gif" alt=""></div>
+    <!-- <div class="loader1" style="width:100vw;height:100vh;display:flex;align-items:center;justify-content:center;background:#fdf0dc;"><img style="width:200px" src="./src/man.gif" alt=""></div> -->
+
+        <!-- Login Page -->
+        <div class="loginpage flex ac jc" style="display:none">
+            <div class="cross" onclick="loginclose()">X</div>
+            <div class="swichcontaier">
+                <div class="switcher flex ac jsa">
+                    <div class="login flex ac jc dc">
+                        <div class="logheading">Sign In</div>
+                        <div class="otheropt flex ac jc">
+                            <div class="logopts flex ac jc google"><i class="fa fa-google"></i></div>
+                            <div class="logopts flex ac jc facebook"><i class="fa fa-facebook-f"></i></div>
+                            <div class="logopts flex ac jc linkedin"><i class="fa fa-linkedin"></i></div>
+                        </div>
+                        <div class="logtext">or use your account</div>
+                        <input type="text" name="Name" placeholder="Name" class="field logname">
+                        <input type="password" name="Password" placeholder="Password" class="field logpassword">
+                        <div class="logtext">Forgot Password?</div>
+                        <div class="btn flex ac jc">Sign In</div>
+                        <div class="switch signupbtn flex ac jc" onclick="signupopen()">Sign Up</div>
+                    </div>
+                    <div class="signup flex ac jc dc">
+                        <div class="logheading">Create Account</div>
+                        <div class="otheropt flex ac jc">
+                            <div class="logopts flex ac jc google"><i class="fa fa-google"></i></div>
+                            <div class="logopts flex ac jc facebook"><i class="fa fa-facebook-f"></i></div>
+                            <div class="logopts flex ac jc linkedin"><i class="fa fa-linkedin"></i></div>
+                        </div>
+                        <div class="logtext">or use your email for registration</div>
+                        <input type="text" name="Name" placeholder="Name" class="field logname">
+                        <input type="email" name="Email" placeholder="Email" class="field logemail">
+                        <input type="password" name="Password" placeholder="Password" class="field logpassword">
+                        <div class="btn flex ac jc" flex ac jc>Sign UP</div>
+                        <div class="switch signinbtn flex ac jc" onclick="signinopen()">Sign In</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Login Page End -->
+    <div class="root">  
+        <main class="flex ac js">
+            <!-- Nav -->
+            <nav>
+                <div class="logo anim1"><span>FIT</span>GUY</div>
+                <ul class="menu">
+                    <a class="link" href="#about"><li class="items anim1">ABOUT</li></a>
+                    <a class="link" href="#activites"><li class="items anim1">ACTIVITES</li></a>
+                    <a class="link" href="#contacts"><li class="items anim1">CONTACT</li></a>
+                    <li class="items anim1" onclick="loginopen()">LOGIN</li>
+                </ul>
+            </nav>
+            <!-- Nav End -->
+
+            <!-- Home -->
+            <div class="section home flex ac jsa">
+                <div class="left flex ac jc dc">
+                    <div class="heading anim1"><span>FEEL</span> the<br> <span>DIFFERENCE</span></div>
+                    <div class="des">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                    <div class="homebtns flex ac jsb">
+                        <div class="homebtn flex ac jc">Join Us</div>
+                        <div class="homebtn getapps flex ac jse">Get App<i style="margin-top: 5px" class="fa fa-download"></i></div>
+                    </div>
+                </div>
+                <div class="right flex ac jc">
+                    <div class="backobj1"></div>
+                    <!-- Phone UI -->
+                        <div class="phone flex ac jse dc">
+                            <div class="uprow flex ac jsb dc">
+                                <div class="text">connect to phone</div>
+                                <div class="container flex ac jsb">
+                                    <div class="uprowleft flex ac jsb dc">
+                                        <div class="time flex ac jc">
+                                            <div class="valuescenter flex as jc dc">
+                                                <div class="timevalue"><span class="count minit" data="38">0</span>:<span class="count second" data="14">0</span></div>
+                                                <div class="timetext">TIME</div>
+                                            </div>
+                                        </div>
+                                        <div class="calories flex ac jc">
+                                            <div class="valuescenter flex as jc dc">
+                                                <div class="caloriesvalue count" data="165">0</div>
+                                                <div class="caloriestext">EST CALORIES</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="steps flex ac jse dc">
+                                        <div class="mainvalue flex ac jc">
+                                            <div class="valuescenter flex as jc dc">
+                                                <div class="stepsvalue count" data="3246">0</div>
+                                                <div class="stepstext">STEPS</div>
+                                            </div>
+                                        </div>
+                                        <div class="icons flex ac jse">
+                                            <img class="walkicon" src="./src/walking icon.webp" alt="">
+                                            <div class="kmvalue count" data="10">0</div>
+                                            <div class="kmtext">km</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <img class="textlogo" src="./src/text logo.webp" alt="">
+                            <div class="downrow flex ac jsb">
+                                <div class="heart flex as jc dc">
+                                    <div class="downrowtext flex ac js">
+                                        <img src="./src/ic24-heart 1.webp" alt="">
+                                        <span>Heart Rate</span>
+                                    </div>
+                                    <div class="downrowvalue flex ac jc">
+                                        <div class="heartvalue count" data="78">0</div><span>bpm</span>
+                                    </div>
+                                </div>
+                                <div class="sleep flex as jc dc">
+                                    <div class="downrowtext flex ac js">
+                                        <img src="./src/sleep_sleeping_rest 1.webp" alt="">
+                                        <span>Sleep</span>
+                                    </div>
+                                    <div class="downrowvalue flex ac jc">
+                                        <div class="sleepvalue count" data="8">0</div><span>hrs</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <img class="phonemenubar" src="./src/menu bar.webp" alt="">
+                        </div>
+                    <!-- Phone Ui End -->
+                </div>
+            </div>
+            <!-- Home End -->
+
+            <!-- ABOUT -->
+            <div class="section about flex ac jc" id="about">
+                <div class="aboutcover"></div>
+                <div class="cardcontainer flex ac jc">
+                    <div class="card card1">
+                        <img src="./src/muscle-muscle-training-dumbbells-wallpaper-preview.webp" alt="" class="cardimg">
+                        <div class="cardcontent flex ac jc dc">
+                             <div class="cardheading">Live Training</div>
+                             <div class="carddes">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div>
+                        </div>
+                    </div>
+                    <div class="card card2">
+                        <img src="./src/Rectangle.webp" alt="" class="cardimg">
+                        <div class="cardcontent flex ac jc dc">
+                             <div class="cardheading">Online Lookups</div>
+                             <div class="carddes">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</div>
+                        </div>
+                    </div>
+                    <div class="card card3">
+                        <img src="./src/gym 2 1.webp" alt="" class="cardimg">
+                        <div class="cardcontent flex ac jc dc">
+                             <div class="cardheading">Fitness Tracking</div>
+                             <div class="carddes">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="aboutcover1"></div>
+            </div>
+            <!-- About End -->
+
+            <!-- ACTIVITES -->
+            <div class="section activites flex ac jsa dc" id="activites">
+                <div class="top flex ac jc dc">
+                    <div class="activitesheading">"We Provides"</div>
+                    <div class="activitycardcontainer flex ac jse">
+                        <div class="activitycard flex ac jc dc">
+                            <div class="activityimage"><img src="./src/trainer1.webp" alt=""></div>
+                            <div class="activityheding">Best Trainers</div>
+                            <div class="activitydes">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore reiciendis maiores culpa?</div>
+                        </div>
+                        <div class="activitycard flex ac jc dc">
+                            <div class="activityimage"><img src="./src/gym.webp" alt=""></div>
+                            <div class="activityheding">Best Gyms</div>
+                            <div class="activitydes">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore reiciendis maiores culpa?</div>
+                        </div>
+                        <div class="activitycard flex ac jc dc">
+                            <div class="activityimage"><img src="./src/app.webp" alt=""></div>
+                            <div class="activityheding">Best Tracking App</div>
+                            <div class="activitydes">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore reiciendis maiores culpa?</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="countbtm flex ac jsa">
+                    <div class="entries activitycount flex ac jc dc">
+                        <div class="activitycountcontainer flex ac jc">
+                            <div class="count1" data="1000">0</div><span>+</span>
+                        </div>
+                        <div class="countertext">Entries</div>
+                    </div>
+                    <div class="classes activitycount flex ac jc dc">
+                        <div class="activitycountcontainer flex ac jc">
+                            <div class="count1" data="100">0</div><span>+</span>
+                        </div>
+                        <div class="countertext">Classes</div>
+                    </div>
+                    <div class="centers activitycount flex ac jc dc">
+                        <div class="activitycountcontainer flex ac jc">
+                            <div class="count1" data="300">0</div><span>+</span>
+                        </div>
+                        <div class="countertext">Centers</div>
+                    </div>
+                    <div class="trainers activitycount flex ac jc dc">
+                        <div class="activitycountcontainer flex ac jc">
+                            <div class="count1" data="600">0</div><span>+</span>
+                        </div>
+                        <div class="countertext">Trainers</div>
+                    </div>
+                </div>
+            </div>
+            <!-- Activity End -->
+
+            <!-- CONTACTS -->
+            <div class="section contacts flex ac jc" id="contacts">
+                <div class="aboutcover"></div>
+                <div class="contacttext flex ac jc">STAY FIT !!!</div>
+                <div class="contactcover2"></div>
+                <div class="contact_content flex ac jsa">
+                    <div class="clm1 flex ac jc dc">
+                        <div class="logo"><span>FIT</span>GUY</div>
+                        <div class="contacttag">A Step Ahead To Stay Fit</div>
+                        <div class="social_icons flex ac jsa">
+                            <i class="fa fa-facebook-square"></i>
+                            <i class="fa fa-instagram"></i>
+                            <i class="fa fa-twitter"></i>
+                            <i class="fa fa-whatsapp"></i>
+                        </div>
+                    </div>
+                    <div class="clm2 flex jsa dc">
+                        <a class="link" href="#about"><div class="ql">About</div></a>
+                        <a class="link" href="#activites"><div class="ql">Activites</div></a>
+                        <a class="link" href="#contacts"><div class="ql">Contact</div></a>
+                        <div class="ql" onclick="loginopen()">Login</div>
+                    </div>
+                    <div class="clm3 flex ac jc dc">
+                        <input type="text" name="Name" placeholder="&nbsp;&nbsp;Name" id="name" class="fieldinput">
+                        <input type="email" name="Email" placeholder="&nbsp;&nbsp;Email" id="email" class="fieldinput">
+                        <textarea name="Subject" id="" cols="30" rows="5" placeholder="&nbsp;&nbsp;Message" class="textareainput fieldinput"></textarea>
+                        <div class="submitbtn flex ac jc ">Submit</div>
+                    </div>
+                </div>
+            </div>
+            <!-- Contacts END -->
+        </main>
+    </div>
+
+    <!-- Js Here -->
+    <script src="./js/index.js"></script>    <!-- Main Js -->
+    <script src="./js/phone.js"></script>    <!-- Phone Js -->
+    <script src="./js/login.js"></script>    <!-- Login Js -->
+    <!-- Js End Here -->
+</body>
+</html>

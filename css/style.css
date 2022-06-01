@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Inconsolata:wght@300&display=swap');
+:root {
+    --textcolor : #fff;
+    --backcolor : rgba(0, 0, 0, 0.95);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 10px;
+    color: #fff;
+}
+::-webkit-scrollbar {
+    width: 1.2rem;
+    background: transparent;
+}
+::-webkit-scrollbar-track {
+    background: var(--backcolor);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--textcolor);
+    border-radius: 10rem;
+}
+.root{
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    perspective: 150rem;
+    transform-style: preserve-3d;
+    background: url(../src/gym\ 2\ 1.webp) no-repeat center center;
+    background-size: cover;
+    scroll-behavior: smooth;
+}
+main{
+    width: 100vw;
+    height: 400vh;
+    flex-direction: column;
+    font-weight: 700;
+}
+.section{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

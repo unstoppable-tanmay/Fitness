@@ -1,0 +1,159 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+html,body{
+    font-size: 10px;
+}
+.root{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 150rem;
+    transform-style: preserve-3d;
+} */
+.phone{
+    width: 40.3rem;
+    height: 81.2rem;
+    zoom: .65;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../src/Screen.webp) no-repeat center;
+    background-size: cover;
+    transform-style: preserve-3d;
+}
+.text{
+    font-size: 2.2rem;
+    color: #fff;
+    margin-left: -17rem;
+}
+.uprow{
+    margin-top: 5rem;
+    width: 37.3rem;
+    height: 25.7rem;
+}
+.container{
+    width: 37.3rem;
+    height: 21.6rem;
+}
+.uprowleft{
+    height: 21.6rem;
+}
+.time,.calories,.steps{
+    width: 17.7rem;
+    height: 10.0rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 2rem;
+}
+.steps{
+    height: 21.6rem;
+}
+.timevalue,.caloriesvalue,.stepsvalue{
+    font-size: 4.0rem;
+    font-weight: 500;
+}
+.timevalue{color:#FFE642;}
+.caloriesvalue{color:#FB1351}
+.stepsvalue{color:#4271ff}
+
+.timetext,.caloriestext,.stepstext{
+    font-size: 1.3rem;
+    color: #fff;
+    letter-spacing: .09rem;
+    margin-left: .15rem;
+}
+.icons{
+    width:12rem;
+    height: 5.2;
+}
+.kmvalue{
+    font-size: 4rem;
+    font-weight: 500;
+    color: #0DB1AD;
+}
+.kmtext{
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #0DB1AD;
+    margin-top: 1.5rem;
+}
+.textlogo{
+    width: 20.4rem;
+    height: 21.4rem;
+}
+.downrow{
+    width: 35.2rem;
+}
+.heart,.sleep{
+    width: 16.6rem;
+    height: 9.4rem;
+    border-radius: 2.0rem;
+}
+.heart{
+    color: #D2416E;
+    background-color: #d2416f30;
+}
+.sleep{
+    color: #197BD2;
+    background-color: #197BD230;
+}
+.downrowtext{
+    margin-left: 2.0rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+    width: 100%;
+}
+.downrowvalue{
+    margin-left: 2.0rem;
+    width: 10.1rem;
+    font-size: 4.0rem;
+    font-weight: 500;
+}
+.downrowtext span{
+    margin-left: .5rem;
+}
+.downrowvalue span{
+    font-size: 1.6rem;
+    margin-left: 1.5rem;
+}
+.sleepvalue{
+    margin-left: -4.5rem;
+}
+.phonemenubar{
+    width: 29.5rem;
+    height: 5.6rem;
+}
+.uprow,.uprowleft,.downrow,.container,.icons,.mainvalue,.valuescenter,.sleep,.heart{
+    transform-style: preserve-3d;
+}
+.time,.calories,.steps,.heart,.sleep{
+    transform-style: preserve-3d;
+}
+.time{
+    transform: translateZ(8rem);
+}
+.calories{
+    transform: translateZ(5rem);
+}
+.steps{
+    transform: translateZ(3rem);
+}
+.heart{
+    transform: translateZ(3rem);
+}
+.sleep{
+    transform: translateZ(5rem);
+}
+.timevalue,.caloriesvalue,.stepsvalue{
+    transform: translateZ(3rem);
+}
+.kmvalue,.kmtext,.downrowvalue{
+    transform: translateZ(1.5rem);
+}
+.timevalue,.caloriesvalue,.stepsvalue{
+    transform-style: preserve-3d;
+}

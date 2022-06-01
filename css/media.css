@@ -1,0 +1,65 @@
+
+/* Media Query */
+@media (max-width: 1156px) {
+    body,html{
+        font-size: 8px;
+    }
+    .contacttext{
+        transform: rotateZ(-6deg);
+        font-size: 15rem;
+    }
+}
+@media (max-width: 900px) {
+    body,html{
+        font-size: 7px;
+    }
+    nav{
+        flex-direction:column;
+    }
+    main{
+        height: 380vh;
+    }
+    .home{
+        height: 130vh;
+    }
+    .activites{
+        height: 70vh;
+    }
+    .contacts{
+        height: 80vh;
+    }
+    .home{
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+    .left{
+        margin-left: -2rem;
+    }
+    .right{
+        margin-top: 15rem;
+    }
+    .heading{
+        margin-left: 0;
+    }
+    .cardcontainer{
+        flex-direction: column;
+        gap: 3rem;   
+        z-index: 5;
+        margin-top: 5rem;
+    }
+    .card1,.card2,.card3{
+        margin-top: 0;
+    }
+    .contacttext{
+        transform: rotateZ(-7deg);
+        font-size: 11rem;
+    }
+}
+@media (max-width: 433px) {
+    body,html{
+        font-size: 5.6px;
+    }
+    .contacttext{
+        transform: rotateZ(-12deg);
+    }
+}

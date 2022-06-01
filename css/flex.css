@@ -1,0 +1,33 @@
+.flex{
+    display: flex;
+}
+.jc{
+    justify-content: center;
+}
+.js{
+    justify-content: flex-start;
+}
+.je{
+    justify-content: flex-end;
+}
+.jsa{
+    justify-content: space-around;
+}
+.jse{
+    justify-content: space-evenly;
+}
+.jsb{
+    justify-content: space-between;
+}
+.ac{
+    align-items: center;
+}
+.as{
+    align-items: flex-start;
+}
+.ae{
+    align-items: flex-end;
+}
+.dc{
+    flex-direction: column;
+}

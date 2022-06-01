@@ -1,0 +1,82 @@
+.loginpage{
+    position:absolute;
+    width:100vw;
+    height: 100vh;
+    background: #0009;
+    color: #000;
+    z-index: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+::selection{
+    display: none;
+}
+.cross{
+    position:absolute;
+    right: 50px;
+    top: 20px;
+    color: #fff;
+    font-size: 5rem;
+}
+.swichcontaier{
+    width: 35rem;height: 45rem;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .4s;
+}
+.switcher{
+    width: 70rem;height: 45rem;
+    overflow: hidden;
+    transition: .4s;
+}
+
+
+.login{
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.logheading{
+    font-size: 4rem;
+    font-weight: 500;
+}
+.otheropt{
+    gap: 1rem;
+    font-size: 1.3rem;
+}
+.logopts{
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    border: 1px solid #000;
+}
+.logtext{
+    font-size: 1.2rem;
+    font-weight: 200;
+}
+.field{
+    width: 25rem;
+    height: 3rem;
+    border-radius: .2rem;
+    outline: none;
+    border: none;
+    background: rgb(233, 233, 233);
+    padding: .5rem;
+    padding-left: 1rem;
+}
+.btn,.switch{
+    font-size: 1.5rem;
+    font-weight: 400;
+    width: 10rem;
+    height: 3.5rem;
+    border-radius: 2rem;
+    background: linear-gradient(45deg,rgb(231, 99, 17), rgb(187, 66, 86));
+}
+.switch{
+    background: rgb(107, 107, 107);
+}
+
+
+.signup{
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
