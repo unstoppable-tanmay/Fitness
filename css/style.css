@@ -47,3 +47,13 @@ main{
     align-items: center;
     justify-content: center;
 }
+
+.absicons{
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+}
+.randicons{
+    font-size: 5rem;
+    position:absolute;
+}
