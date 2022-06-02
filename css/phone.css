@@ -16,7 +16,7 @@ html,body{
     transform-style: preserve-3d;
 } */
 .phone{
-    width: 40.3rem;
+    min-width: 40.3rem;
     height: 81.2rem;
     zoom: .65;
     display: flex;
