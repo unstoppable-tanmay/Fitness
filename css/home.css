@@ -11,12 +11,11 @@
     line-height: 1.1;
     font-size: 10rem;
 }
-/* .heading span:nth-child(1){
-    color: #25AB75;
+.heading span{
+    color: transparent;
+    letter-spacing: 2px;
+    -webkit-text-stroke: 2px var(--textcolor);
 }
-.heading span:nth-child(3){
-    color: #25AB75;
-} */
 .des{
     width: 60rem;
     font-size: 1.7rem;
