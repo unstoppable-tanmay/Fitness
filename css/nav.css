@@ -37,7 +37,7 @@ nav{
     line-height: 1.2em;
     color: #fff0;
     text-shadow: 0 calc(-1*var(--_t,0em)) var(--textcolor), 
-                 0 calc(1.2em - var(--_t,0em)) #1095c1;
+                 0 calc(1.2em - var(--_t,0em)) #eee;
     overflow: hidden;
     transition: .3s;
 }
