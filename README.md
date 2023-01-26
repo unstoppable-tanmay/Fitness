@@ -3,4 +3,4 @@ For Internship
 
 
 
-https://unstoppabletanmay.github.io/Fitness/
+https://unstoppable-tanmay.github.io/Fitness/
